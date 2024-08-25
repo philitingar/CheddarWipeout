@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2658F5292C7B667A008184B5 /* CryptoAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2658F5282C7B667A008184B5 /* CryptoAPI.xcframework */; };
 		266B22A92C7781D700291F34 /* CheddarWipeoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22A82C7781D700291F34 /* CheddarWipeoutApp.swift */; };
 		266B22AB2C7781D700291F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22AA2C7781D700291F34 /* ContentView.swift */; };
 		266B22AD2C7781D900291F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266B22AC2C7781D900291F34 /* Assets.xcassets */; };
 		266B22B02C7781D900291F34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266B22AF2C7781D900291F34 /* Preview Assets.xcassets */; };
 		266B22B82C77831C00291F34 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 266B22B72C77831C00291F34 /* RealmSwift */; };
-		266B22BB2C77869D00291F34 /* CryptoAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */; };
-		266B22BC2C77869D00291F34 /* CryptoAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		266B22BF2C77961800291F34 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22BE2C77961800291F34 /* CryptoModel.swift */; };
 		266B22C12C77A47600291F34 /* CryptoCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22C02C77A47600291F34 /* CryptoCoinViewModel.swift */; };
 		266B22C32C7892DE00291F34 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22C22C7892DE00291F34 /* CryptoManager.swift */; };
@@ -27,7 +26,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				266B22BC2C77869D00291F34 /* CryptoAPI.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,12 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2658F5282C7B667A008184B5 /* CryptoAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoAPI.xcframework; path = "../Crypto-api framework/CryptoAPI.xcframework"; sourceTree = "<group>"; };
 		266B22A52C7781D700291F34 /* CheddarWipeout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheddarWipeout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266B22A82C7781D700291F34 /* CheddarWipeoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheddarWipeoutApp.swift; sourceTree = "<group>"; };
 		266B22AA2C7781D700291F34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		266B22AC2C7781D900291F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266B22AF2C7781D900291F34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoAPI.xcframework; path = ../../Challenge/CryptoAPI.xcframework; sourceTree = "<group>"; };
 		266B22BE2C77961800291F34 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		266B22C02C77A47600291F34 /* CryptoCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinViewModel.swift; sourceTree = "<group>"; };
 		266B22C22C7892DE00291F34 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
@@ -54,7 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				266B22B82C77831C00291F34 /* RealmSwift in Frameworks */,
-				266B22BB2C77869D00291F34 /* CryptoAPI.xcframework in Frameworks */,
+				2658F5292C7B667A008184B5 /* CryptoAPI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +101,7 @@
 		266B22B92C77869D00291F34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */,
+				2658F5282C7B667A008184B5 /* CryptoAPI.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
