@@ -11,7 +11,28 @@
 		266B22AB2C7781D700291F34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22AA2C7781D700291F34 /* ContentView.swift */; };
 		266B22AD2C7781D900291F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266B22AC2C7781D900291F34 /* Assets.xcassets */; };
 		266B22B02C7781D900291F34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266B22AF2C7781D900291F34 /* Preview Assets.xcassets */; };
+		266B22B82C77831C00291F34 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 266B22B72C77831C00291F34 /* RealmSwift */; };
+		266B22BB2C77869D00291F34 /* CryptoAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */; };
+		266B22BC2C77869D00291F34 /* CryptoAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		266B22BF2C77961800291F34 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22BE2C77961800291F34 /* CryptoModel.swift */; };
+		266B22C12C77A47600291F34 /* CryptoCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22C02C77A47600291F34 /* CryptoCoinViewModel.swift */; };
+		266B22C32C7892DE00291F34 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22C22C7892DE00291F34 /* CryptoManager.swift */; };
+		266B22C52C78969500291F34 /* CryptoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B22C42C78969500291F34 /* CryptoRowView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		266B22BD2C77869D00291F34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				266B22BC2C77869D00291F34 /* CryptoAPI.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		266B22A52C7781D700291F34 /* CheddarWipeout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheddarWipeout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +40,12 @@
 		266B22AA2C7781D700291F34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		266B22AC2C7781D900291F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266B22AF2C7781D900291F34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoAPI.xcframework; path = ../../Challenge/CryptoAPI.xcframework; sourceTree = "<group>"; };
+		266B22BE2C77961800291F34 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		266B22C02C77A47600291F34 /* CryptoCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinViewModel.swift; sourceTree = "<group>"; };
+		266B22C22C7892DE00291F34 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		266B22C42C78969500291F34 /* CryptoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRowView.swift; sourceTree = "<group>"; };
+		266B22C62C7B62FB00291F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266B22B82C77831C00291F34 /* RealmSwift in Frameworks */,
+				266B22BB2C77869D00291F34 /* CryptoAPI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +66,7 @@
 			children = (
 				266B22A72C7781D700291F34 /* CheddarWipeout */,
 				266B22A62C7781D700291F34 /* Products */,
+				266B22B92C77869D00291F34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +81,11 @@
 		266B22A72C7781D700291F34 /* CheddarWipeout */ = {
 			isa = PBXGroup;
 			children = (
+				266B22C62C7B62FB00291F34 /* Info.plist */,
 				266B22A82C7781D700291F34 /* CheddarWipeoutApp.swift */,
-				266B22AA2C7781D700291F34 /* ContentView.swift */,
+				266B22C82C7B63CE00291F34 /* Model */,
+				266B22C72C7B63B900291F34 /* Views */,
+				266B22CA2C7B642A00291F34 /* ViewModel */,
 				266B22AC2C7781D900291F34 /* Assets.xcassets */,
 				266B22AE2C7781D900291F34 /* Preview Content */,
 			);
@@ -67,6 +100,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		266B22B92C77869D00291F34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				266B22BA2C77869D00291F34 /* CryptoAPI.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		266B22C72C7B63B900291F34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				266B22C42C78969500291F34 /* CryptoRowView.swift */,
+				266B22AA2C7781D700291F34 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		266B22C82C7B63CE00291F34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				266B22BE2C77961800291F34 /* CryptoModel.swift */,
+				266B22C22C7892DE00291F34 /* CryptoManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		266B22CA2C7B642A00291F34 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				266B22C02C77A47600291F34 /* CryptoCoinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +144,16 @@
 				266B22A12C7781D700291F34 /* Sources */,
 				266B22A22C7781D700291F34 /* Frameworks */,
 				266B22A32C7781D700291F34 /* Resources */,
+				266B22BD2C77869D00291F34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CheddarWipeout;
+			packageProductDependencies = (
+				266B22B72C77831C00291F34 /* RealmSwift */,
+			);
 			productName = CheddarWipeout;
 			productReference = 266B22A52C7781D700291F34 /* CheddarWipeout.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 266B229C2C7781D700291F34;
+			packageReferences = (
+				266B22B62C77831C00291F34 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 266B22A62C7781D700291F34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266B22C52C78969500291F34 /* CryptoRowView.swift in Sources */,
+				266B22BF2C77961800291F34 /* CryptoModel.swift in Sources */,
+				266B22C12C77A47600291F34 /* CryptoCoinViewModel.swift in Sources */,
+				266B22C32C7892DE00291F34 /* CryptoManager.swift in Sources */,
 				266B22AB2C7781D700291F34 /* ContentView.swift in Sources */,
 				266B22A92C7781D700291F34 /* CheddarWipeoutApp.swift in Sources */,
 			);
@@ -275,9 +353,9 @@
 				DEVELOPMENT_TEAM = V6R32R32N9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CheddarWipeout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +382,9 @@
 				DEVELOPMENT_TEAM = V6R32R32N9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CheddarWipeout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		266B22B62C77831C00291F34 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		266B22B72C77831C00291F34 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 266B22B62C77831C00291F34 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 266B229D2C7781D700291F34 /* Project object */;
 }
